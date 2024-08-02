@@ -12,16 +12,22 @@
             <img src="/img/Logo-hodu.png" alt="호두 마켓의 로그인 페이지" class="marketLogo" />
         </h1>
         <main>
-            <button type="button" class="loginBtn">구매회원 로그인</button>
-            <button type="button" class="loginBtn">판매회원 로그인</button>
-            <form action="submit">
+            <div class="login-buttons">
+                <button type="button" class="loginBtn buyer active">구매회원 로그인</button>
+                <button type="button" class="loginBtn seller">판매회원 로그인</button>
+            </div>
+            <form action="submit" id="loginForm">
                 <input type="text" placeholder="아이디" />
                 <input type="text" placeholder="비밀번호" />
-                <button class="loginSubmitBtn">로그인</button>
+                <button type="submit" class="loginSubmitBtn">로그인</button>
             </form>
+        </main>
+        <div class="links">
             <a href="#">회원가입</a>
             <span>|</span>
             <a href="#">비밀번호 찾기</a>
-        </main>
+        </div>
+
+        <script></script>
     </body>
 </html>

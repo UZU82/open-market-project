@@ -11,7 +11,7 @@ body * {
 }
 
 h1 {
-    margin: auto;
+    margin: 100px auto 0;
     width: 238px;
     height: 74px;
 }
@@ -22,17 +22,51 @@ h1 {
 }
 
 main {
+    position: relative;
+    margin: 30px auto 30px;
     width: 550px;
-    height: 388px;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .loginBtn {
     font-size: 18px;
     font-weight: 500;
+    width: 275px;
+    height: 80px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px 10px 0 0;
+    background-color: #f0f0f0;
+}
+
+.loginBtn.active {
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    border-bottom: none;
+}
+
+#loginForm {
+    padding: 34px 35px 36px;
+    width: 550px;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    top: -20px;
+    z-index: 1;
 }
 
 input {
     display: block;
+    width: 480px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 input::placeholder {
@@ -45,9 +79,21 @@ input::placeholder {
     font-size: 18px;
     font-weight: 700;
     color: #ffffff;
+    margin-top: 36px;
     width: 480px;
     height: 60px;
     background-color: #21bf48;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.links {
+    margin: 30px auto;
+    width: 184px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
