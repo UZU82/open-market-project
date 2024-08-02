@@ -10,45 +10,49 @@ body * {
     font-family: 'SpoqaHanSansNeo-Regular';
 }
 
+/* heading */
 h1 {
-    margin: 100px auto 0;
+    margin: 100px auto 70px;
     width: 238px;
     height: 74px;
 }
-
 .marketLogo {
     width: 100%;
     height: 100%;
 }
 
+/* 메인 로그인 */
 main {
     position: relative;
-    margin: 30px auto 30px;
+    margin: 0 auto 30px;
     width: 550px;
+    height: 352px;
 }
 
+/* 어떤 방법으로 로그인할지 결정하는 버튼 */
 .login-buttons {
     display: flex;
     justify-content: space-between;
+    vertical-align: -20px;
 }
-
 .loginBtn {
     font-size: 18px;
     font-weight: 500;
+    padding-bottom: 20px;
     width: 275px;
     height: 80px;
     border: 1px solid #c4c4c4;
     border-radius: 10px 10px 0 0;
     background-color: #f0f0f0;
 }
-
 .loginBtn.active {
     position: relative;
     z-index: 2;
     background-color: white;
-    border-bottom: none;
+    border-bottom: 1px solid white;
 }
 
+/* 로그인 인풋 */
 #loginForm {
     padding: 34px 35px 36px;
     width: 550px;
@@ -60,7 +64,6 @@ main {
     top: -20px;
     z-index: 1;
 }
-
 input {
     display: block;
     width: 480px;
@@ -68,13 +71,13 @@ input {
     border: none;
     border-bottom: 1px solid #c4c4c4;
 }
-
 input::placeholder {
     color: #767676;
     font-size: 16px;
     font-weight: 400;
 }
 
+/* 로그인 submit 버튼 */
 .loginSubmitBtn {
     font-size: 18px;
     font-weight: 700;
@@ -88,16 +91,13 @@ input::placeholder {
     cursor: pointer;
 }
 
+/* 회원가입 및 비밀번호 찾기 링크 이동 */
 .links {
-    margin: 30px auto;
-    width: 184px;
-    height: 20px;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
-
 a {
     color: #333333;
     font-size: 16px;
     font-weight: 400;
+    margin: 0 14px;
 }
