@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    font-family: 'SpoqaHanSansNeo-Regular';
+}
+
+h1 {
+    margin: auto;
+    width: 238px;
+    height: 74px;
+}
+
+.marketLogo {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    width: 550px;
+    height: 388px;
+}
+
+.loginBtn {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input {
+    display: block;
+}
+
+input::placeholder {
+    color: #767676;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.loginSubmitBtn {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 480px;
+    height: 60px;
+    background-color: #21bf48;
+}
+
+a {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+}

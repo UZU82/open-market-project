@@ -4,20 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/login.css" />
     </head>
     <body>
         <h1>
-            <img src="/img/Logo-hodu.png" alt="호두 마켓의 로그인 페이지" />
+            <img src="/img/Logo-hodu.png" alt="호두 마켓의 로그인 페이지" class="marketLogo" />
         </h1>
         <main>
-            <button type="button">구매회원 로그인</button>
-            <button type="button">판매회원 로그인</button>
+            <button type="button" class="loginBtn">구매회원 로그인</button>
+            <button type="button" class="loginBtn">판매회원 로그인</button>
             <form action="submit">
                 <input type="text" placeholder="아이디" />
                 <input type="text" placeholder="비밀번호" />
-                <button>로그인</button>
+                <button class="loginSubmitBtn">로그인</button>
             </form>
             <a href="#">회원가입</a>
+            <span>|</span>
             <a href="#">비밀번호 찾기</a>
         </main>
     </body>
