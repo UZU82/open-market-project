@@ -16,9 +16,11 @@
                 <button type="button" class="loginBtn buyer active">구매회원 로그인</button>
                 <button type="button" class="loginBtn seller">판매회원 로그인</button>
             </div>
-            <form action="submit" id="loginForm">
-                <input type="text" placeholder="아이디" />
-                <input type="password" placeholder="비밀번호" />
+            <form id="loginForm">
+                <input type="text" placeholder="아이디" class="idInput" />
+                <div class="idErrorMessage errorMessage" style="display: none"></div>
+                <input type="password" placeholder="비밀번호" class="pwInput" />
+                <div class="pwErrorMessage errorMessage" style="display: none"></div>
                 <button type="submit" class="loginSubmitBtn">로그인</button>
             </form>
         </main>
