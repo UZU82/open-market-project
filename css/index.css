@@ -12,6 +12,7 @@ body * {
 
 header {
     margin: auto;
+    padding: 26px 0;
     width: 1280px;
     height: 90px;
     display: flex;
@@ -84,4 +85,28 @@ header a img {
 main {
     height: 500px;
     background: #f2f2f2;
+}
+
+/* section */
+
+section {
+    margin: auto;
+    width: 1280px;
+}
+
+#productList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 70px;
+    padding: 60px 0;
+}
+
+#productList li {
+}
+
+#productList img {
+    width: 380px;
+    height: 380px;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
 }
