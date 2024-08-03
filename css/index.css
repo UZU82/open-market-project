@@ -101,12 +101,28 @@ section {
     padding: 60px 0;
 }
 
-#productList li {
-}
-
 #productList img {
     width: 380px;
     height: 380px;
     border-radius: 10px;
     border: 1px solid #c4c4c4;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.p2 {
+    color: #767676;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.p1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+section ul li h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
 }
