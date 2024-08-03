@@ -11,15 +11,23 @@ body * {
 }
 
 header {
+    margin: auto;
     width: 1280px;
     height: 90px;
     display: flex;
+    justify-content: space-between;
+}
+
+div {
+    display: flex;
+    align-items: center;
 }
 
 form {
     position: relative;
     width: 400px;
     height: 46px;
+    margin-left: 30px;
 }
 
 input {
@@ -53,6 +61,27 @@ button img {
     height: 28px;
 }
 
+.aWrrap {
+    margin-right: 26px;
+}
+
 header a span {
     display: block;
+    font-size: 12px;
+    line-height: 14px;
+    color: #767676;
+}
+
+header a img {
+    height: 32px;
+    width: 32px;
+}
+
+.img {
+    margin-left: 4px;
+}
+
+main {
+    height: 500px;
+    background: #f2f2f2;
 }
