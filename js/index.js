@@ -1,17 +1,19 @@
 const $ul = document.querySelector('#productList'); // ID 선택자 사용
 
 function drawProduct(dataItem) {
-    const $li = document.createElement('li'); // div 대신 li 사용
-    const $h2 = document.createElement('h2'); // h1 대신 h2 사용
+    const $li = document.createElement('li');
+    const $h2 = document.createElement('h2');
     const $p1 = document.createElement('p');
     const $p2 = document.createElement('p');
     const $img = document.createElement('img');
+    const $span = document.createElement('span');
 
     $img.src = dataItem.image;
-    $img.alt = dataItem.product_name; // 접근성을 위한 alt 속성 추가
+    $img.alt = dataItem.product_name;
     $h2.textContent = dataItem.product_name;
-    $p1.textContent = `${dataItem.price.toLocaleString()}원`;
+    $p1.textContent = dataItem.price;
     $p2.textContent = dataItem.store_name;
+    $span.textContent = '원';
 
     $p1.className = 'p1';
     $p2.className = 'p2';
@@ -19,6 +21,7 @@ function drawProduct(dataItem) {
     $li.appendChild($img);
     $li.appendChild($p2);
     $li.appendChild($h2);
+    $p1.appendChild($span);
     $li.appendChild($p1);
     $ul.appendChild($li);
 }
