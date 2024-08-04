@@ -9,60 +9,82 @@
     </head>
     <body>
         <header>
-            <div>
-                <h1>
+            <div class="header-wrap">
+                <h1 class="hodu-logo">
                     <img src="/img/Logo-hodu.png" alt="호두 마켓 페이지" />
                 </h1>
-                <form action="">
-                    <input type="text" placeholder="상품을 검색해보세요!" />
-                    <button>
+                <form action="" class="search-box">
+                    <input type="text" placeholder="상품을 검색해보세요!" class="search-input" />
+                    <button class="search-btn">
                         <img src="/img/search.svg" alt="" />
                     </button>
                 </form>
             </div>
-            <div>
-                <a href="" class="aWrrap">
-                    <img src="/img/icon-shopping-cart.svg" alt="" class="img" />
-                    <span>장바구니</span>
-                </a>
-                <a href="">
-                    <img src="/img/icon-user.svg" alt="" />
-                    <span>로그인</span>
-                </a>
-            </div>
+            <nav>
+                <ul class="header-wrap">
+                    <li>
+                        <a href="" class="header-nav-wrap">
+                            <img src="/img/icon-shopping-cart.svg" alt="" class="header-nav-icon" />
+                            <span class="header-nav-text">장바구니</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="header-nav-wrap">
+                            <img src="/img/icon-user.svg" alt="" class="header-nav-icon" />
+                            <span class="header-nav-text">로그인</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <main>
-            <button>
+
+        <section>
+            <button class="section-swiper-btn">
                 <img src="/img/icon-swiper-1.svg" alt="" />
             </button>
-            <button>
+            <button class="section-swiper-btn">
                 <img src="/img/icon-swiper-2.svg" alt="" />
             </button>
-        </main>
-        <section>
-            <ul id="productList"></ul>
         </section>
+
+        <main>
+            <ul id="product-list"></ul>
+        </main>
+
         <footer>
-            <a href="#">호두샵 소개</a>
-            <a href="#">이용약관</a>
-            <a href="#">개인정보처리방침</a>
-            <a href="#">전자금융거래약관</a>
-            <a href="#">청소년보호정책</a>
-            <a href="#">제휴문의</a>
-            <a href="#">
-                <img src="/img/icon-insta.svg " alt="" />
-            </a>
-            <a href="#">
-                <img src="/img/icon-fb.svg" alt="" />
-            </a>
-            <a href="#">
-                <img src="/img/icon-yt.svg" alt="" />
-            </a>
-            <p>(주)HODO SHOP</p>
-            <p>제주특별자치도 제주시 동광고 137 제주코딩베이스캠프</p>
-            <p>사업자 번호 : 000-0000-0000 | 통신판매업</p>
-            <p>대표 : 김호두</p>
+            <div class="footer-container">
+                <nav class="footer-nav" aria-label="사이트 정보 링크">
+                    <ul>
+                        <li><a href="#">호두샵 소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">전자금융거래약관</a></li>
+                        <li><a href="#">청소년보호정책</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                </nav>
+                <nav class="social-nav" aria-label="소셜 미디어 링크">
+                    <ul>
+                        <li>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="company-info">
+                    <p><strong>(주)HODU SHOP</strong></p>
+                    <p>제주특별자치도 제주시 동광로 137 제주코딩베이스캠프</p>
+                    <p>사업자 번호 : 000-0000-0000 | 통신판매업</p>
+                    <p>대표 : 김호두</p>
+                </div>
+            </div>
         </footer>
+
         <script src="/js/index.js"></script>
     </body>
 </html>
