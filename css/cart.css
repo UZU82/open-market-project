@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff')
+        format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body * {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    box-sizing: border-box;
+}
+
+/* header */
+.wrap {
+    height: 90px;
+    box-shadow: 0px 4px 5px 0px #0000001a;
+}
+
+header {
+    margin: auto;
+    padding: 26px 0;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* flex 사용하려고 쓴 거 */
+.header-wrap {
+    display: flex;
+    align-items: center;
+}
+
+/* 로고 */
+.hodu-logo {
+    width: 124px;
+    height: 38px;
+}
+.hodu-logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 검색창 */
+.search-box {
+    position: relative;
+    width: 400px;
+    height: 46px;
+    margin-left: 30px;
+}
+.search-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 55px 0 22px;
+    border: 2px solid #21bf48;
+    border-radius: 20px;
+    font-size: 16px;
+}
+.search-input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+}
+.search-btn {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.search-btn img {
+    width: 28px;
+    height: 28px;
+}
+
+/* nav 내용 */
+.header-nav-wrap {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4px;
+}
+.header-nav-wrap:first-child {
+    margin-right: 26px;
+}
+.header-nav-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #767676;
+}
+.header-nav-icon {
+    height: 32px;
+    width: 32px;
+    justify-self: center;
+}
