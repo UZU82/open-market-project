@@ -1,48 +1,55 @@
+/* 웹 폰트 정의 */
 @font-face {
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: 'SpoqaHanSansNeo-Regular'; /* 폰트 패밀리 이름 지정 */
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff')
-        format('woff');
+        format('woff'); /* 폰트 파일 경로 및 형식 지정 */
     font-weight: normal;
     font-style: normal;
 }
 
+/* 전체 body 요소에 대한 스타일 */
 body {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox 레이아웃 사용 */
+    flex-direction: column; /* 세로 방향으로 요소 배치 */
 }
 
+/* body 내의 모든 요소에 대한 폰트 설정 */
 body * {
-    font-family: 'SpoqaHanSansNeo-Regular';
+    font-family: 'SpoqaHanSansNeo-Regular'; /* 위에서 정의한 웹 폰트 적용 */
 }
 
-/* heading */
+/* 헤딩(로고 포함) 스타일 */
 h1 {
-    margin: 100px auto 70px;
+    margin: 100px auto 70px; /* 상단 100px, 좌우 자동(중앙 정렬), 하단 70px 마진 */
     width: 238px;
     height: 74px;
 }
+
+/* 로고 이미지 스타일 */
 .marketLogo {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* 부모 요소의 너비에 맞춤 */
+    height: 100%; /* 부모 요소의 높이에 맞춤 */
 }
 
-/* 메인 로그인 */
+/* 메인 로그인 섹션 스타일 */
 main {
-    position: relative;
-    margin: 0 auto 354px;
+    position: relative; /* 상대적 위치 설정 */
+    margin: 0 auto 354px; /* 상단 0, 좌우 자동(중앙 정렬), 하단 354px 마진 */
     width: 550px;
     height: 352px;
-    flex: 1;
+    flex: 1; /* Flexbox에서 남은 공간을 차지하도록 설정 */
     display: flex;
     flex-direction: column;
 }
 
-/* 어떤 방법으로 로그인할지 결정하는 버튼 */
+/* 로그인 버튼 컨테이너 스타일 */
 .login-buttons {
     display: flex;
-    justify-content: space-between;
-    vertical-align: -20px;
+    justify-content: space-between; /* 버튼 사이에 공간을 균등하게 분배 */
+    vertical-align: -20px; /* 수직 정렬 조정 */
 }
+
+/* 개별 로그인 버튼 스타일 */
 .loginBtn {
     font-size: 18px;
     font-weight: 500;
@@ -50,17 +57,50 @@ main {
     width: 275px;
     height: 80px;
     border: 1px solid #c4c4c4;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0; /* 상단 모서리만 둥글게 */
     background-color: #f0f0f0;
-}
-.active {
     position: relative;
-    z-index: 2;
-    background-color: white;
-    border-bottom: 1px solid white;
+    z-index: 1;
 }
 
-/* 로그인 인풋 */
+/* 활성화된 로그인 버튼 스타일 */
+.loginBtn.active {
+    padding-bottom: 21px; /* 하단 패딩 1px 증가 */
+    background-color: white;
+    border-bottom: none; /* 하단 테두리 제거 */
+    z-index: 3; /* 다른 요소 위에 표시 */
+}
+
+/* 로그인 버튼의 가상 요소 (하단 흰색 선) */
+.loginBtn::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 274px;
+    height: 20px;
+    background-color: white;
+    display: none; /* 기본적으로 숨김 */
+}
+
+/* 활성화된 버튼의 가상 요소 표시 */
+.loginBtn.active::after {
+    display: block;
+}
+
+/* 구매회원 버튼 활성화 시 가상 요소 위치 조정 */
+.loginBtn.buyer.active::after {
+    left: 0;
+    right: -1px;
+}
+
+/* 판매회원 버튼 활성화 시 가상 요소 위치 조정 */
+.loginBtn.seller.active::after {
+    left: -1px;
+    right: 0;
+}
+
+/* 로그인 폼 스타일 */
 #loginForm {
     margin-bottom: 30px;
     padding: 34px 35px 36px;
@@ -70,22 +110,27 @@ main {
     box-sizing: border-box;
     background-color: white;
     position: relative;
-    top: -20px;
-    z-index: 1;
+    top: -20px; /* 버튼과 겹치도록 위로 이동 */
+    z-index: 2;
     flex: 1;
 }
+
+/* 입력 필드 스타일 */
 input {
     display: block;
     width: 480px;
     height: 60px;
     border-bottom: 1px solid #c4c4c4;
 }
+
+/* 입력 필드 플레이스홀더 스타일 */
 input::placeholder {
     color: #767676;
     font-size: 16px;
     font-weight: 400;
 }
 
+/* 에러 메시지 스타일 */
 .errorMessage {
     margin: 26px 0;
     font-size: 16px;
@@ -93,7 +138,7 @@ input::placeholder {
     color: #eb5757;
 }
 
-/* 로그인 submit 버튼 */
+/* 로그인 제출 버튼 스타일 */
 .loginSubmitBtn {
     font-size: 18px;
     font-weight: 700;
@@ -102,16 +147,16 @@ input::placeholder {
     width: 480px;
     height: 60px;
     background-color: #21bf48;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-/* 회원가입 및 비밀번호 찾기 링크 이동 */
+/* 회원가입 및 비밀번호 찾기 링크 컨테이너 스타일 */
 .links {
     text-align: center;
-    margin-top: auto;
+    margin-top: auto; /* 컨테이너 하단에 배치 */
 }
+
+/* 링크 스타일 */
 a {
     color: #333333;
     font-size: 16px;
