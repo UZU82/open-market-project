@@ -22,8 +22,8 @@ function setErrorBorder(input) {
 }
 
 function resetBorder(input) {
-    input.style.border = ''; // 기본 스타일로 재설정
-    input.style.borderRadius = ''; // 기본 스타일로 재설정
+    input.style.border = '';
+    input.style.borderRadius = '';
 }
 
 loginForm.addEventListener('submit', (e) => {
@@ -32,9 +32,7 @@ loginForm.addEventListener('submit', (e) => {
 
     // 모든 에러 메시지 및 테두리 초기화
     idErrorMessage.textContent = '';
-    idErrorMessage.hidden = true;
     pwErrorMessage.textContent = '';
-    pwErrorMessage.hidden = true;
     resetBorder(idInput);
     resetBorder(pwInput);
 
