@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('로그인 성공!');
                 // localStorage: 브라우저에 데이터를 저장하는 웹 스토리지 API
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('user_type', loginType);
                 redirectToDashboard();
             } else {
                 // ||: 논리 OR 연산자
