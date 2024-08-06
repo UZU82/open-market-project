@@ -39,8 +39,62 @@
                 </nav>
             </header>
         </div>
-        <main>
+
+        <main class="cart">
             <h2>장바구니</h2>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>상품정보</th>
+                        <th>수량</th>
+                        <th>주문금액</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <img src="product-image.jpg" alt="상품 이미지" />
+                                <div class="product-details">
+                                    <h2>상품명</h2>
+                                    <p class="price">17,500원</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="quantity-control">
+                                <input type="number" value="1" min="1" />
+                                <button class="update-btn">수정</button>
+                            </div>
+                        </td>
+                        <td class="order-price">17,500원</td>
+                    </tr>
+                    <!-- 추가 상품 행 -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <table class="summary-table">
+                                <tr>
+                                    <th>총 상품금액</th>
+                                    <th>총 배송비</th>
+                                    <th>결제예정금액</th>
+                                </tr>
+                                <tr>
+                                    <td>46,500원</td>
+                                    <td>0원</td>
+                                    <td class="total-price">46,500원</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="cart-actions">
+                <button class="order-btn">주문하기</button>
+            </div>
         </main>
     </body>
 </html>
