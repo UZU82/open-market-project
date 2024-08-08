@@ -129,20 +129,28 @@ h2 {
 }
 
 .product-info img {
-    width: 80px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     margin-right: 15px;
+    border-radius: 10px;
 }
 
-.product-details h2 {
+.store-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #767676;
+}
+
+.product-details h3 {
     margin: 0 0 5px 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .price {
-    font-weight: bold;
-    color: #333;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .quantity-control {
@@ -179,6 +187,55 @@ h2 {
     padding: 10px;
     text-align: center;
     border: none;
+}
+
+.cart-table tfoot {
+    background-color: #f8f8f8;
+}
+
+.summary-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+}
+
+.summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.summary-label {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.summary-value {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.summary-item.total {
+    position: relative;
+}
+
+.summary-item.total::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 40px;
+    background-color: #ddd;
+}
+
+.summary-item.total .summary-value {
+    color: #ff5f5f;
 }
 
 .summary-table th {
